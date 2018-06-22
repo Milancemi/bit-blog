@@ -37,12 +37,11 @@ body {
     color: black;
 }
 .brand-logo {
-    margin-left: 20px;
-}
-#brandLogo {
-    margin-left: 30px;
+    margin-left: 50px;
     font-size: 0.6em;
+    text-transform: uppercase;
 }
+
 #header-links {
     margin-right: 30px;
 }
