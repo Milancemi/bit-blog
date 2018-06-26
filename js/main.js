@@ -3,26 +3,17 @@ const mainModule = ((data, ui) => {
     const $aboutBtn = $("#aboutBtn");
     const $authorsBtn = $("#authorsBtn");
     const $newPostBtn = $("#newPostBtn");
-    const $singlePostTitleBtn = $(".singlePostTitle");
-    const $allAuthorsDirectionBtn = $("#allAuthorsDirectionBtn");
-    const $newPostSubmitBtn = $("#newPostSubmitBtn");
-    const $newPostResetBtn = $("#newPostResetBtn");
     const $submitNewPostForm = $("#submitNewPostForm")
     const $searchIcon = $("#searchIcon");
     const $searchInputPosts = $("#searchInputPosts");
     const $searchInputAuthors = $("#searchInputAuthors");
     const $searchIconPosts = $("#searchIconPosts");
     const $searchIconAuthors = $("#searchIconAuthors");
-    // const $input_text = $("#input_text");
-    // const $textarea2 = $("#textarea2");
-    // const newUserId = 3;
+
+
     $submitNewPostForm.on("submit", (e) => {
         e.preventDefault();
     })
-    // let postTitleValue = $input_text.val();
-    // let postBodyValue = $textarea2.val();
-    let postList = [];
-    let authorList = [];
 
     const initApp = () => {
         ui.updateFooter();
@@ -116,7 +107,6 @@ const mainModule = ((data, ui) => {
             })
         }
 
-        // $(document).on("click", ".singlePostTitle", renderMorePostsFromAuthor)
         $(document).on("click", ".singlePostTitle", renderSinglePost);
         $(document).on("click", ".singleAuthorTitle", renderSingleAuthor);
         $(document).on("click", "#allAuthorsDirectionBtn", goToAuthorList);

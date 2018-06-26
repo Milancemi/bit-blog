@@ -1,4 +1,6 @@
 const dataModule = (() => {
+
+
     class Post {
         constructor(title, body, id, userId) {
             this.title = title;
@@ -41,8 +43,7 @@ const dataModule = (() => {
             url: "https://jsonplaceholder.typicode.com/posts",
             method: "GET"
         })
-        request.done((response) => {
-            const postsData = response;
+        request.done((postsData) => {
             const myPostList = createPostList(postsData);
             // console.log(myPostList);
             successHandler(myPostList);
