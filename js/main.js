@@ -1,4 +1,4 @@
-const main = ((data, ui) => {
+const mainModule = ((data, ui) => {
     const $homeBtn = $("#homeBtn");
     const $aboutBtn = $("#aboutBtn");
     const $authorsBtn = $("#authorsBtn");
@@ -140,3 +140,6 @@ const main = ((data, ui) => {
         initApp
     }
 })(dataModule, uiModule)
+
+
+mainModule.initApp();
